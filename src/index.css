@@ -1,13 +1,120 @@
+/* src/index.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.light-mode {
+  --primary-color: #4db5ff;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --heading-color: #000000;
+  --blink-color: #000000;
+  --border-bottom-color: #f7f5f5;
+}
+
+.dark-mode {
+  --primary-color: #4db5ff;
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --heading-color: orangered;
+  --blink-color: #4db5ff;
+  --border-bottom-color: #282a31;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body.light-mode {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.dark-mode {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.HeroSection {
+  color: var(--heading-color);
+}
+.light {
+  height: 2rem;
+  width: 2rem;
+}
+
+/* @keyframes AnimateFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes AnimateFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */
+
+/* Typewriter Effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-right-color: transparent;
+  }
 }

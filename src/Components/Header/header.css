@@ -1,0 +1,82 @@
+.HeaderSection {
+  padding-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.Typewriter {
+  overflow: hidden; /* Hide the overflow */
+  white-space: nowrap; /* Keep the text on one line */
+  border-right: 0.04em solid var(--primary-color);
+  animation: typing 3s steps(30, end), blink 1s infinite;
+}
+/* .RightAni {
+  animation: AnimateFromRight 2s ease-in-out;
+} */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.Telephone {
+  display: inline-block;
+  width: max-content;
+  padding: 0.3rem 0.8rem;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid rgb(66 69 82);
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.4rem;
+}
+
+.Telephone:hover {
+  background: #fff;
+  color: #1f1f38;
+  border: 1px solid rgb(66 69 82);
+  transition: all 0.3s ease-in-out;
+}
+header .SocialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 3rem;
+}
+
+header .SocialIcons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid rgb(66 69 82);
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  outline: none;
+}
+.Intro > * {
+  margin-bottom: 0.5rem;
+}
+.ProfileImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(77, 181, 255), transparent);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 12rem 12rem 0px 0px;
+  /* padding: 2rem; */
+  overflow: hidden;
+}
