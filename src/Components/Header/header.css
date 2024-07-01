@@ -1,5 +1,5 @@
 .HeaderSection {
-  padding-top: 2rem;
+  margin: 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,14 @@
 /* .RightAni {
   animation: AnimateFromRight 2s ease-in-out;
 } */
+.light {
+  height: 2rem;
+  width: 2rem;
+  align-self: flex-end;
+}
+.Mode {
+  align-self: flex-end;
+}
 header {
   display: flex;
   flex-direction: column;

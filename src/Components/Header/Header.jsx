@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
 
 import { FaFacebook } from "react-icons/fa";
-// import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMailSharp } from "react-icons/io5";
+import { CiLight } from "react-icons/ci";
 
 const Header = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.body.className = darkMode ? "light-mode" : "dark-mode";
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <section className="HeaderSection">
+      <div className="Mode" onClick={toggleDarkMode}>
+        <CiLight className="light" />
+      </div>
       <header>
         <div className="Intro">
           <h5 className="RightAni">Hi, I'm</h5>
@@ -41,7 +54,7 @@ const Header = () => {
           </a>
         </div>
         <div className="ProfileImage">
-          <img src="/Images/1.png" alt="ajaykurmi"></img>
+          <img src="/Images/ajay.png" alt="ajaykurmi"></img>
         </div>
       </header>
     </section>

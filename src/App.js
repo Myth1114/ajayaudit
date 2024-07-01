@@ -1,30 +1,17 @@
 // src/App.js
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "./Components/Header/Header";
 import About from "./Components/About/About";
 
-import { CiLight } from "react-icons/ci";
-
 import "./index.css";
+import Mottos from "./Components/Mottos/Mottos";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    document.body.className = darkMode ? "dark-mode" : "light-mode";
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
     <div className="App">
-      <div onClick={toggleDarkMode}>
-        <CiLight className="light" />
-      </div>
       <Header />
       <About />
+      <Mottos />
       <h1>Welcome to My Website</h1>
     </div>
   );

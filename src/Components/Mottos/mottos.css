@@ -1,0 +1,31 @@
+.MottoContainer {
+  margin: 15rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Quote {
+  margin-top: 1rem;
+}
+.Quote p {
+  font-size: 1.2rem;
+  color: #5c6265;
+}
+.Quote small {
+  font-size: 0.8rem;
+  color: #5c6265;
+}
+
+@media (min-width: 768px) {
+  .MottoBox {
+    width: 90%;
+  }
+}
+@media (min-width: 900px) {
+  .MottoBox {
+    width: 50%;
+  }
+}

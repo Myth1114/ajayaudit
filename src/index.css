@@ -76,11 +76,22 @@ body.dark-mode {
 .HeroSection {
   color: var(--heading-color);
 }
-.light {
-  height: 2rem;
-  width: 2rem;
+.ProfileImage img {
+  margin-left: 4rem;
 }
-
+.PrimaryHeading {
+  font-size: 2rem;
+}
+@media (min-width: 900px) {
+  .PrimaryHeading {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 430px) {
+  .PrimaryHeading {
+    font-size: 1.7rem;
+  }
+}
 /* @keyframes AnimateFromLeft {
   0% {
     transform: translateX(-100%);
