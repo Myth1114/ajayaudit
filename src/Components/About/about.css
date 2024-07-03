@@ -63,7 +63,7 @@
   font-size: 1.7rem;
 }
 .CardContent p {
-  font-size: 0.8rem;
+  text-align: justify;
   color: #5c6265;
   line-height: 1.6rem;
 }
