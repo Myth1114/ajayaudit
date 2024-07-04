@@ -6,6 +6,7 @@ import About from "./Components/About/About";
 import "./index.css";
 import Mottos from "./Components/Mottos/Mottos";
 import Bio from "./Components/Bio/Bio";
+import Gallery from "./Components/Gallery/Gallery";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Bio />
       <About />
       <Mottos />
+      <Gallery />
       <h1>Welcome to My Website</h1>
     </div>
   );

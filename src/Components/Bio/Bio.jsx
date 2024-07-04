@@ -6,10 +6,14 @@ const Bio = () => {
       <div className="BioContainer">
         <div className="BioLeft">
           <img src="/Images/ajay.png" alt="ajaykurmi" />
+          <div className="Wrapper">
+            <h2>8</h2>
+            <span>Years of Experience</span>
+          </div>
         </div>
         <div className="BioRight">
           <div className="Overview">
-            <h5>My Biography</h5>
+            <h5>About Me</h5>
             <h1 className="PrimaryHeading">
               A Lead UI Designer & Web Developer
             </h1>
