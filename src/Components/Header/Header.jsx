@@ -54,7 +54,7 @@ const Header = () => {
           </a>
         </div>
         <div className="ProfileImage">
-          <img src="/Images/ajay.png" alt="ajaykurmi"></img>
+          <img src="Images/ajay.png" alt="ajaykurmi"></img>
         </div>
       </header>
     </section>

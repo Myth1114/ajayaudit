@@ -2,8 +2,51 @@ import React from "react";
 import "./gallery.css";
 const Gallery = () => {
   return (
-    <div>
-      <section class="gallery">
+    <div className="SectionGallery">
+      <div className="SectionGallery__Card">
+        <div className="CardImage">
+          <img src="/Images/ajay2.jpg" alt="CardImage" />
+        </div>
+        <div className="CardContent">
+          <h3>Lion's Club Meeting</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+            consequatur. Tenetur omnis soluta facere, architecto laborum, vitae
+            praesentium in quae assumenda ducimus minima aut quaerat est,
+            voluptatum facilis vero magni!
+          </p>
+        </div>
+      </div>
+      <div className="SectionGallery__Card">
+        <div className="CardImage">
+          <img src="Images/1.jpg" alt="CardImage" />
+        </div>
+        <div className="CardContent">
+          <h3>Card Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+            consequatur. Tenetur omnis soluta facere, architecto laborum, vitae
+            praesentium in quae assumenda ducimus minima aut quaerat est,
+            voluptatum facilis vero magni!
+          </p>
+        </div>
+      </div>
+      <div className="SectionGallery__Card">
+        <div className="CardImage">
+          <img src="Images/1.jpg" alt="CardImage" />
+        </div>
+        <div className="CardContent">
+          <h3>Card Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+            consequatur. Tenetur omnis soluta facere, architecto laborum, vitae
+            praesentium in quae assumenda ducimus minima aut quaerat est,
+            voluptatum facilis vero magni!
+          </p>
+        </div>
+      </div>
+      {/* <section class="gallery">
         <figure class="gallery__item gallery__item--1">
           <img src="/Images/1.jpg" alt="Gallery-1" class="gallery__img" />
         </figure>
@@ -46,7 +89,7 @@ const Gallery = () => {
         <figure class="gallery__item gallery__item--14">
           <img src="/Images/1.jpg" alt="Gallery-14" class="gallery__img" />
         </figure>
-      </section>
+      </section> */}
     </div>
   );
 };

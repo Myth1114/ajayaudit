@@ -5,7 +5,7 @@ const Bio = () => {
     <section className="BioSection">
       <div className="BioContainer">
         <div className="BioLeft">
-          <img src="/Images/ajay.png" alt="ajaykurmi" />
+          <img src="Images/ajay.png" alt="ajaykurmi" />
           <div className="Wrapper">
             <h2>8</h2>
             <span>Years of Experience</span>
