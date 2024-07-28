@@ -133,3 +133,21 @@ body.dark-mode {
     border-right-color: transparent;
   }
 }
+
+@keyframes leftRight {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

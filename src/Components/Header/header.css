@@ -8,6 +8,23 @@
   overflow: hidden;
   position: relative;
 }
+.Floating .Icon-1,
+.Icon-2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: leftRight 3.5s ease-in-out infinite;
+}
+.Floating .Icon-1 {
+  top: 20%;
+  left: 1%;
+}
+.Floating .Icon-2 {
+  top: 90%;
+  right: 1%;
+}
+.Floating img {
+  width: 3rem;
+}
 .Typewriter {
   overflow: hidden; /* Hide the overflow */
   white-space: nowrap; /* Keep the text on one line */
@@ -87,4 +104,14 @@ header .SocialIcons a {
   border-radius: 12rem 12rem 0px 0px;
   /* padding: 2rem; */
   overflow: hidden;
+}
+@media (max-width: 600px) {
+  .Floating .Icon-1 {
+    top: 5%;
+    left: 1%;
+  }
+  .Floating .Icon-2 {
+    top: 90%;
+    right: 1%;
+  }
 }

@@ -22,6 +22,10 @@ const Header = () => {
       <div className="Mode" onClick={toggleDarkMode}>
         <CiLight className="light" />
       </div>
+      <div className="Floating">
+        <img className="Icon-1" src="/Images/icon1.png" alt="ajay" />
+        <img className="Icon-2" src="/Images/statistics.png" alt="ajay" />
+      </div>
       <header>
         <div className="Intro">
           <h5 className="RightAni">Hi, I'm</h5>
