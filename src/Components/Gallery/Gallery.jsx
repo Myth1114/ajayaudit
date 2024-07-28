@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./gallery.css";
+
 const Gallery = () => {
+  useEffect(() => {
+    AOS.init({ duration: "1000" });
+  }, []);
   return (
-    <div className="SectionGallery">
+    <div
+      className="SectionGallery"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+    >
       <div className="SectionGallery__Card">
         <div className="CardImage">
           <img src="/Images/ajay2.jpg" alt="CardImage" />

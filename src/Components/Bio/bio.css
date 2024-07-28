@@ -42,6 +42,7 @@
 }
 
 .BioRight {
+  position: relative;
   padding: 1rem;
   border-radius: 1rem;
   background-color: rgb(162 162 162 / 4%);
@@ -56,6 +57,16 @@
 .BioRight .Overview p {
   color: #5c6265;
 }
+
+/* .BioRight .Overview h5::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 3rem;
+  background-color: #ad00ff;
+  top: 7%;
+  left: 16%;
+} */
 .BioRight .Details {
   display: grid;
   grid-template-columns: 1fr 1fr;

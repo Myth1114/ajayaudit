@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./mottos.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Mottos = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="MottoContainer">
-      <div className="MottoBox">
+      <div data-aos="zoom-in" className="MottoBox">
         <div className="Motto">
           <p className="PrimaryHeading">
             "Your Trust, Our Commitment to Excellence."

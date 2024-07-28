@@ -7,6 +7,8 @@ import "./index.css";
 import Mottos from "./Components/Mottos/Mottos";
 import Bio from "./Components/Bio/Bio";
 import Gallery from "./Components/Gallery/Gallery";
+import Education from "./Components/Education/Education";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
       <Header />
       <Bio />
       <About />
+      <Education />
       <Mottos />
       <Gallery />
+      <Contact />
       <h1>Welcome to My Website</h1>
     </div>
   );

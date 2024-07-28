@@ -1,0 +1,73 @@
+.ContactSection {
+}
+.ContactContainer {
+}
+.Top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Top h2 {
+  flex: 1;
+  text-align: center;
+}
+.Bottom {
+  display: flex;
+  justify-content: space-around;
+
+  gap: 1rem;
+  margin: 4rem 2rem;
+}
+.ContactInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 1rem;
+  padding: 2rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.09) 0%,
+    rgba(255, 255, 255, 0.03) 95.42%
+  );
+  border: 1px solid transparent;
+  backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  transition: all 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+}
+.ContactInfo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(62, 174, 255, 0.29) 0%,
+    rgba(62, 174, 255, 0.13) 95.42%
+  );
+  transform-origin: top left;
+  transform: scale(0);
+  transition: transform 0.5s ease-out;
+  z-index: -1;
+}
+.ContactInfo:hover::before {
+  transform: scale(1);
+}
+.ContactInfo:hover::before {
+  transition: transform 0.5s ease-in;
+}
+
+@media (max-width: 768px) {
+  .Bottom {
+    margin: 5rem 1rem;
+    flex-wrap: wrap;
+  }
+  .ContactInfo {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,75 @@
+.EducationSection {
+  margin: 1rem;
+}
+.EducationContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  place-items: center;
+}
+.Left {
+}
+
+.Left p {
+  color: #5c6265;
+}
+.Right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.RightBox {
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.09) 0%,
+    rgba(255, 255, 255, 0.03) 95.42%
+  );
+  border-radius: 1rem;
+}
+.RightBox h1 {
+  color: rgb(255 255 255 / 10%);
+}
+.RightBox .Place {
+  color: var(--primary-color);
+}
+.RightBox p {
+  line-height: 1.6;
+  text-align: justify;
+  color: #5c6265;
+}
+.RightBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(62, 174, 255, 0.29) 0%,
+    rgba(62, 174, 255, 0.13) 95.42%
+  );
+  transform-origin: top left;
+  transform: scale(0);
+  transition: transform 0.5s ease-out;
+  z-index: -1;
+}
+.RightBox:hover::before {
+  transform: scale(1);
+}
+.RightBox:hover::before {
+  transition: transform 0.5s ease-in;
+}
+
+@media (max-width: 768px) {
+  .EducationContainer {
+    grid-template-columns: 1fr;
+  }
+  .Right {
+    grid-template-columns: 1fr;
+  }
+}
